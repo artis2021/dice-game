@@ -1,0 +1,40 @@
+.Dice{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 100px;
+    font-weight: 700;
+    color: rgb(81, 28, 112);
+    box-shadow: 0 6px 8px rgb(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rolling{
+    animation: shake 1s ease alternate;
+}
+
+
+@keyframes shake {
+    0%{
+        transform: translate(0) rotate(0deg);
+    }
+    25%{
+        transform: translate(-10px , 0) rotate(-10deg);
+    }
+    50%{
+        transform: translate(0) rotate(0deg);
+    }
+    75%{
+        transform: translate(10px, 0) rotate(10deg);
+    }
+    100%{
+        transform: translate(0) rotate(0deg);
+    }
+}
